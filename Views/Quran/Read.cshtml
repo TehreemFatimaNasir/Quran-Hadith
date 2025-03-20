@@ -1,0 +1,167 @@
+﻿@model WebApplication5.Models.SurahDetails
+
+@{
+    ViewData["Title"] = "Read";
+    var languages = ViewBag.Languages as List<string> ?? new List<string>(); 
+    var selectedLanguage = ViewBag.SelectedLanguage as string ?? "en";
+}
+
+<h2>@Model.EnglishName</h2>
+<h3>@Model.EnglishNameTranslation</h3>
+<p><strong>Revelation Type:</strong> @Model.RevelationType</p>
+
+
+<form method="get" asp-action="Read" asp-controller="Quran">
+    <input type="hidden" name="id" value="@Model.Number" />
+    <label for="language">Choose Language:</label>
+    <select name="language" id="language" onchange="this.form.submit()">
+        @foreach (var lang in languages)
+        {
+            <option value="@lang" selected="@(lang == selectedLanguage ? "selected" : null)">@lang</option>
+        }
+    </select>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th style="text-align: right;">Arabic Text</th> 
+            <th>Translation (@selectedLanguage.ToUpper())</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model?.Ayahs != null)
+        {
+            @foreach (var ayah in Model.Ayahs)
+            {
+                <tr>
+                    <td>@ayah.Number</td>
+                    <td style="direction: rtl; text-align: right; font-size: 20px;">@ayah.Text</td> 
+                    <td>@(ayah.Translation ?? "Translation not available")</td>
+
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<style>
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f7fc; 
+        color: black;
+    }
+
+    h2, h3 {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        background: linear-gradient(to right, #2c3e50, #3498db); 
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    /* Paragraph Text */
+    p {
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Form Styling */
+    form {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Dropdown Styling */
+    select {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #3498db; /* Blue Border */
+        background: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    label {
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+    }
+
+    /* Table Styling */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: white;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+        /* Table Header */
+        table thead {
+            background-color: #2980b9; /* Deep Blue */
+            color: white; /* White Text */
+        }
+
+            table thead th {
+                padding: 12px;
+                font-size: 16px;
+                text-align: center;
+                border: 1px solid #ddd; /* Light Border */
+            }
+
+        /* ✅ Index Column */
+        table tbody td:first-child {
+            background-color: #5dade2; /* Lighter Blue */
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* ✅ Arabic Text Column */
+        table tbody td:nth-child(2) {
+            direction: rtl;
+            text-align: right;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            background-color: white;
+        }
+
+        /* ✅ Translation Column */
+        table tbody td:nth-child(3) {
+            background-color: white;
+            text-align: center;
+            font-size: 16px;
+            color: black;
+        }
+
+        /* Table Rows */
+        table tbody tr {
+            transition: 0.3s ease-in-out;
+        }
+
+            table tbody tr:hover {
+                background-color: #d6eaf8; /* Light Blue Hover */
+            }
+
+            /* Alternating Row Colors */
+            table tbody tr:nth-child(even) {
+                background-color: #ebf5fb; /* Very Light Blue */
+            }
+
+        /* Table Cells */
+        table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd; /* Light Grey Border */
+        }
+
+</style>

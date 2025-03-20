@@ -1,0 +1,44 @@
+﻿@model IEnumerable<WebApplication5.Models.Chapter>
+
+@{
+    ViewData["Title"] = "Chapters";
+}
+
+<h2>Hadith Chapters</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Chapter Number</th>
+            <th>Chapter English</th>
+            <th>Chapter Arabic</th>
+            <th>Action</th> <!-- Added heading for actions -->
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var chapter in Model)
+            {
+                <tr>
+                    <td>@chapter.Id</td>
+                    <td>@chapter.ChapterNumber</td>
+                    <td>@chapter.ChapterEnglish</td>
+                    <td>@chapter.ChapterArabic</td>
+                    <td>
+                        <a asp-controller="Hadith" asp-action="HadithDetails" asp-route-chapterId="@chapter.Id" class="btn btn-primary">
+                            View Hadiths
+                        </a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="5" class="text-center">No chapters found.</td></tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Books", "Hadith")" class="btn btn-secondary">Back to Books</a>

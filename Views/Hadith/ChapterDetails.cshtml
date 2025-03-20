@@ -1,0 +1,46 @@
+﻿@* @model IEnumerable<WebApplication5.Models.Hadith>
+
+
+@{
+    ViewData["Title"] = "ChapterDetails";
+}
+
+
+<h2>Hadiths in This Chapter</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Hadith Number</th>
+            <th>Narrator</th>
+            <th>English</th>
+            <th>Urdu</th>
+            <th>Arabic</th>
+        </tr>
+    </thead>
+    <t@if (Model= =null || !Model.Any())
+          {
+    <p>No Hadiths found for this chapter.</p>
+}
+else
+{
+   
+        <tbody>
+                @foreach (var hadith in Model)
+                {
+                    <tr>
+                        <td>@hadith.HadithNumber</td>
+                        <td>@hadith.EnglishNarrator</td>
+                        <td>@hadith.HadithEnglish</td>
+                        <td dir="rtl">@hadith.HadithUrdu</td>
+                        <td dir="rtl">@hadith.HadithArabic</td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+}
+
+    </tbody>
+</table>
+
+<a href="@Url.Action("Books", "Hadith")" class="btn btn-secondary">Back to Chapters</a> *@

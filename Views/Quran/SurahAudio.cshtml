@@ -1,0 +1,100 @@
+﻿@model WebApplication5.Models.SurahDetails
+
+@{
+    ViewData["Title"] = "SurahAudio";
+}
+
+<h2>@Model.EnglishName - @Model.EnglishNameTranslation</h2>
+
+@foreach (var ayah in Model.Ayahs)
+{
+    <p>@ayah.Text</p>
+    <audio controls>
+        <source src="@ayah.Audio" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    <hr />
+}
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<style>
+    /* Page Background */
+    /* Page Background */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f7fc; /* Soft Blue Tint */
+        color: black;
+        text-align: center; /* Centers everything by default */
+    }
+
+    /* Main Surah Container */
+    .surah-container {
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #ffffff; /* White background */
+        border-radius: 10px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Surah Title */
+    h2 {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 26px;
+        background: linear-gradient(to right, #2c3e50, #3498db); /* Dark Gray to Blue Gradient */
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    /* Ayah Box (Fully Centered) */
+    .ayah-box {
+        background: white;
+        padding: 20px;
+        border-left: 4px solid #2980b9; /* Blue Border */
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        justify-content: center; /* Center content vertically */
+        text-align: center;
+    }
+
+    /* Ayah Text */
+    .ayah-text {
+        font-size: 22px;
+        font-weight: bold;
+        direction: rtl; /* Right to Left */
+        text-align: center; /* Centers text */
+        padding: 10px;
+        color: black;
+        width: 100%;
+    }
+
+    /* Audio Player */
+    .audio-player {
+        display: block;
+        margin: 15px auto;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Divider */
+    .divider {
+        border: none;
+        height: 2px;
+        background: linear-gradient(to right, #5dade2, #3498db);
+        margin: 20px auto;
+        width: 80%;
+    }
+
+</style>

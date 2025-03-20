@@ -1,0 +1,38 @@
+﻿@model WebApplication5.Models.Hadith
+
+@{
+    ViewData["Title"] = "Hadith Details";
+}
+
+<h2>Hadith Details</h2>
+
+@if (Model == null)
+{
+    <p>No Hadith found for this chapter.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Hadith Number</th>
+                <th>Narrator</th>
+                <th>English</th>
+                <th>Urdu</th>
+                <th>Arabic</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.HadithNumber</td>
+                <td>@Model.EnglishNarrator</td>
+                <td>@Model.HadithEnglish</td>
+                <td dir="rtl">@Model.HadithUrdu</td>
+                <td dir="rtl">@Model.HadithArabic</td>
+            </tr>
+        </tbody>
+    </table>
+}
+
+<a href="@Url.Action("Books", "Hadith")" class="btn btn-secondary">Back to Chapters</a>
+
