@@ -3,56 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\dell\\source\\repos\\WebApplication5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\hadith\\hadithdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\hadith\\hadithdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\hadith\\chapters.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\hadith\\chapters.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\hadith\\chapterdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\hadith\\chapterdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\controllers\\hadithcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:controllers\\hadithcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\models\\hadithservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:models\\hadithservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\controllers\\qurancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:controllers\\qurancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\models\\quranservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:models\\quranservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\hadith\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\hadith\\books.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\models\\hadith.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:models\\hadith.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\models\\surah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:models\\surah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\models\\qurantranslationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:models\\qurantranslationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\models\\ayahresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:models\\ayahresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\controllers\\qurancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:controllers\\qurancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\quran\\surahaudio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\quran\\surahaudio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\quran\\read.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -63,8 +23,24 @@
       "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\quran\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\quran\\surahaudio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\quran\\surahaudio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\hadith\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\hadith\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\hadith\\hadiths.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\hadith\\hadiths.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\hadith\\chapters.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\hadith\\chapters.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|c:\\users\\dell\\source\\repos\\webapplication5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DEA2F0B-2604-4626-8A77-8160AB38A0EB}|WebApplication5.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,212 +50,139 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Read.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\Read.cshtml",
+              "RelativeDocumentMoniker": "Views\\Quran\\Read.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\Read.cshtml",
+              "RelativeToolTip": "Views\\Quran\\Read.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T15:01:18.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Quran\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\Index.cshtml",
+              "RelativeToolTip": "Views\\Quran\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T15:00:53.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hadith\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\Index.cshtml",
+              "RelativeToolTip": "Views\\Hadith\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T08:10:03.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Chapters.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\Chapters.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hadith\\Chapters.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\Chapters.cshtml",
+              "RelativeToolTip": "Views\\Hadith\\Chapters.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T08:07:59.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Hadiths.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\Hadiths.cshtml",
+              "RelativeDocumentMoniker": "Views\\Hadith\\Hadiths.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\Hadiths.cshtml",
+              "RelativeToolTip": "Views\\Hadith\\Hadiths.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwCgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T08:07:09.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SurahAudio.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\SurahAudio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Quran\\SurahAudio.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\SurahAudio.cshtml",
+              "RelativeToolTip": "Views\\Quran\\SurahAudio.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T15:01:33.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuranService.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\QuranService.cs",
+              "RelativeDocumentMoniker": "Models\\QuranService.cs",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\QuranService.cs",
+              "RelativeToolTip": "Models\\QuranService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA3wEMAAACnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:00:22.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuranController.cs",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Controllers\\QuranController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuranController.cs",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Controllers\\QuranController.cs",
+              "RelativeToolTip": "Controllers\\QuranController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:00:01.727Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HadithDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\HadithDetails.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hadith\\HadithDetails.cshtml",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\HadithDetails.cshtml",
-              "RelativeToolTip": "Views\\Hadith\\HadithDetails.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T15:23:34.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HadithController.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Controllers\\HadithController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HadithController.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Controllers\\HadithController.cs",
-              "RelativeToolTip": "Controllers\\HadithController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAswDQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T10:09:03.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Surah.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\Surah.cs",
-              "RelativeDocumentMoniker": "Models\\Surah.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\Surah.cs",
-              "RelativeToolTip": "Models\\Surah.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAcwCkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T09:37:07.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Chapters.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\Chapters.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hadith\\Chapters.cshtml",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\Chapters.cshtml",
-              "RelativeToolTip": "Views\\Hadith\\Chapters.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T10:15:47.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChapterDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\ChapterDetails.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hadith\\ChapterDetails.cshtml",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\ChapterDetails.cshtml",
-              "RelativeToolTip": "Views\\Hadith\\ChapterDetails.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T10:20:38.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Books.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\Books.cshtml",
-              "RelativeDocumentMoniker": "Views\\Hadith\\Books.cshtml",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Hadith\\Books.cshtml",
-              "RelativeToolTip": "Views\\Hadith\\Books.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T10:10:43.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HadithService.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\HadithService.cs",
-              "RelativeDocumentMoniker": "Models\\HadithService.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\HadithService.cs",
-              "RelativeToolTip": "Models\\HadithService.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAkwH0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T10:08:09.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "QuranService.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\QuranService.cs",
-              "RelativeDocumentMoniker": "Models\\QuranService.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\QuranService.cs",
-              "RelativeToolTip": "Models\\QuranService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T09:39:11.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T14:58:25.938Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "QuranTranslationResponse.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\QuranTranslationResponse.cs",
-              "RelativeDocumentMoniker": "Models\\QuranTranslationResponse.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\QuranTranslationResponse.cs",
-              "RelativeToolTip": "Models\\QuranTranslationResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T09:38:05.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Hadith.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\Hadith.cs",
-              "RelativeDocumentMoniker": "Models\\Hadith.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\Hadith.cs",
-              "RelativeToolTip": "Models\\Hadith.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAACoAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T10:07:39.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AyahResponse.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\AyahResponse.cs",
-              "RelativeDocumentMoniker": "Models\\AyahResponse.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Models\\AyahResponse.cs",
-              "RelativeToolTip": "Models\\AyahResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T09:38:42.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "QuranController.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Controllers\\QuranController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QuranController.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Controllers\\QuranController.cs",
-              "RelativeToolTip": "Controllers\\QuranController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T09:36:43.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T09:45:13.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Read.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\Read.cshtml",
-              "RelativeDocumentMoniker": "Views\\Quran\\Read.cshtml",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\Read.cshtml",
-              "RelativeToolTip": "Views\\Quran\\Read.cshtml",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T09:44:47.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SurahAudio.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\SurahAudio.cshtml",
-              "RelativeDocumentMoniker": "Views\\Quran\\SurahAudio.cshtml",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\SurahAudio.cshtml",
-              "RelativeToolTip": "Views\\Quran\\SurahAudio.cshtml",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAQwGMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T10:05:03.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Quran\\Index.cshtml",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\WebApplication5\\Views\\Quran\\Index.cshtml",
-              "RelativeToolTip": "Views\\Quran\\Index.cshtml",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAQwHYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-20T09:43:35.027Z"
+              "WhenOpened": "2025-04-17T15:04:11.296Z"
             }
           ]
         }

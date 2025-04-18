@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Text.Json;
+using System.Threading.Tasks;
 using WebApplication5.Models;
 
 namespace WebApplication5.Controllers
 {
+
     public class HadithController : Controller
     {
         private readonly HadithService _hadithService;
@@ -15,46 +18,22 @@ namespace WebApplication5.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var Hadiths = await _hadithService.GetAllHadithsAsync();
-            return View(Hadiths);
-        }
-        public async Task<IActionResult> Books()
-        {
-            var books = await _hadithService.GetAllBooksAsync();
+            var books = await _hadithService.GetBooksAsync();
             return View(books);
         }
 
-
         public async Task<IActionResult> Chapters(string bookSlug)
         {
-            var result = await _hadithService.GetChaptersAsync(bookSlug);
-
-            if (result != null)
-            {
-                return View(result); 
-            }
-
-            return View(new List<Chapter>());
+            var chapters = await _hadithService.GetChaptersAsync(bookSlug);
+            ViewBag.BookSlug = bookSlug;
+            return View(chapters);
         }
 
-        [HttpGet("HadithDetails/{chapterId}")]
-        public async Task<IActionResult> HadithDetails(int chapterId)
-
+        public async Task<IActionResult> Hadiths(string bookSlug, string chapter)
         {
-            var url = $"https://hadithapi.com/api/hadiths/{chapterId}?apiKey=$2y$10$0KsokUuNkmO6xXsXLWCjue6JEVE6olfFFO3wosGGeRUlNBOPsfW";
-
-            var jsonData = await _hadithService.GetAsync(url);
-
-            if (!string.IsNullOrEmpty(jsonData))
-            {
-                var result = JsonSerializer.Deserialize<Hadith>(jsonData,
-                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-
-                return View(result);
-            }
-
-            return View(new Hadith());
+            var hadiths = await _hadithService.GetHadithsAsync(bookSlug, chapter);
+            return View(hadiths);
         }
-
     }
 }
+    

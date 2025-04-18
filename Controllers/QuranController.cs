@@ -14,7 +14,7 @@ namespace WebApplication5.Controllers
             _quranService = quranService;
         }
 
-        // ✅ Fetch all Surahs
+      
         public async Task<IActionResult> Index()
         {
             var surahs = await _quranService.GetAllSurahsAsync();

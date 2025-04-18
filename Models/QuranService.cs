@@ -6,6 +6,7 @@ using System.Linq;
 using Newtonsoft.Json;
 using WebApplication5.Models;
 
+
 public class QuranService
 {
     private readonly HttpClient _httpClient;
@@ -18,27 +19,24 @@ public class QuranService
     public async Task<List<Surah>> GetAllSurahsAsync()
     {
         var response = await _httpClient.GetAsync("https://api.alquran.cloud/v1/surah");
-        if (!response.IsSuccessStatusCode) return new List<Surah>();
 
-        var jsonData = await response.Content.ReadAsStringAsync();
-        var result = System.Text.Json.JsonSerializer.Deserialize<QuranResponse>(jsonData, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        if (response.IsSuccessStatusCode)
+        {
+            var jsonData = await response.Content.ReadAsStringAsync();
+            var result = System.Text.Json.JsonSerializer.Deserialize<QuranResponse>(jsonData, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            return result?.Data ?? new List<Surah>();
+        }
 
-        return result?.Data ?? new List<Surah>();
+        return new List<Surah>();
     }
 
-    // ✅ Fetch Surah with Translation
     public async Task<SurahDetails> GetSurahTranslationAsync(int id, string language = "en.asad")
     {
-        string arabicUrl = $"https://api.alquran.cloud/v1/surah/{id}";
-        string translationUrl = $"https://api.alquran.cloud/v1/surah/{id}/{language}";
+        var arabicResponse = await _httpClient.GetStringAsync($"https://api.alquran.cloud/v1/surah/{id}");
+        var translationResponse = await _httpClient.GetStringAsync($"https://api.alquran.cloud/v1/surah/{id}/{language}");
 
-        // Fetch Arabic Surah Details
-        var responseArabic = await _httpClient.GetStringAsync(arabicUrl);
-        var arabicData = JsonConvert.DeserializeObject<SurahDetailsResponse>(responseArabic);
-
-        // Fetch Translation
-        var responseTranslation = await _httpClient.GetStringAsync(translationUrl);
-        var translationData = JsonConvert.DeserializeObject<SurahDetailsResponse>(responseTranslation);
+        var arabicData = JsonConvert.DeserializeObject<SurahDetailsResponse>(arabicResponse);
+        var translationData = JsonConvert.DeserializeObject<SurahDetailsResponse>(translationResponse);
 
         if (arabicData?.Data?.Ayahs != null && translationData?.Data?.Ayahs != null)
         {
@@ -51,21 +49,14 @@ public class QuranService
         return arabicData?.Data;
     }
 
-    // ✅ Fetch available translation languages
     public async Task<List<string>> GetAvailableLanguagesAsync()
     {
-        string url = "https://api.alquran.cloud/v1/edition/type/translation";
-        var response = await _httpClient.GetStringAsync(url);
+        var response = await _httpClient.GetStringAsync("https://api.alquran.cloud/v1/edition/type/translation");
         var editionResponse = JsonConvert.DeserializeObject<EditionResponse>(response);
 
-        if (editionResponse?.Data != null)
-        {
-            return editionResponse.Data.Select(e => e.Identifier).ToList();
-        }
-
-        return new List<string> { "en.asad", "ur.junagarhi", "fr.hamidullah" };
+        return editionResponse?.Data?.Select(e => e.Identifier).ToList()
+            ?? new List<string> { "en.asad", "ur.junagarhi", "fr.hamidullah" };
     }
-
 
     public async Task<SurahDetails> GetSurahAudioAsync(int surahNumber)
     {
@@ -80,7 +71,4 @@ public class QuranService
 
         return null;
     }
-
-
-
 }

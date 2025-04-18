@@ -1,0 +1,101 @@
+﻿@model System.Text.Json.JsonElement?
+@{
+    ViewData["Title"] = "Hadith Books";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-4">
+    <h2 class="mb-3 -heading">Hadith Books</h2>
+    <div class="list-group">
+        @foreach (var book in Model.Value.EnumerateArray())
+        {
+            <a class="list-group-item list-group-item-action book-item" href="@Url.Action("Chapters", new { bookSlug = book.GetProperty("bookSlug").GetString() })">
+                <strong>@book.GetProperty("bookName")</strong><br />
+                <small>Chapters: @book.GetProperty("chapters_count") | Hadiths: @book.GetProperty("hadiths_count")</small>
+            </a>
+        }
+    </div>
+</div>
+
+
+<style>
+  
+    .-heading {
+        color: #2f2f2f; 
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #005f8e;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+
+    .list-group {
+        background-color: #005f8e; 
+        border-radius: 8px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        padding-top: 15px;
+    }
+
+    
+    .book-item {
+        background-color: #f9f9f9; 
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+        padding: 18px;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 8px;
+        color: #2f2f2f;
+    }
+
+        .book-item:hover {
+            background-color: #e0f7fa; 
+            transform: translateX(5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .book-item small {
+            color: #6c757d; 
+        }
+
+  
+    .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+    }
+
+    button {
+        background-color: #005f8e; 
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        button:hover {
+            background-color: #00456b; 
+        }
+
+    
+     (max-width: 768px) {
+        .container
+
+    {
+        padding: 20px;
+    }
+
+    .-heading {
+        font-size: 24px;
+    }
+
+    .book-item {
+        padding: 15px;
+    }
+
+    }
+</style>

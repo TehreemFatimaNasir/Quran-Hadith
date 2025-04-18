@@ -296,3 +296,4 @@ C:\Users\dell\source\repos\WebApplication5\obj\Debug\net9.0\refint\WebApplicatio
 C:\Users\dell\source\repos\WebApplication5\obj\Debug\net9.0\WebApplication5.pdb
 C:\Users\dell\source\repos\WebApplication5\obj\Debug\net9.0\WebApplication5.genruntimeconfig.cache
 C:\Users\dell\source\repos\WebApplication5\obj\Debug\net9.0\ref\WebApplication5.dll
+C:\Users\dell\source\repos\WebApplication5\obj\Debug\net9.0\WebApplication5.sourcelink.json

@@ -2,7 +2,19 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold mb-4"> Welcome to the Islamic Resource Hub</h1>
+        <p class="lead text-muted mb-5">Please select one of the sections below:</p>
+
+        <div class="d-flex justify-content-center gap-4">
+            <a class="btn btn-lg btn-outline-primary px-5 py-3 shadow rounded-pill" href="/Quran/Index">
+                <i class="bi bi-book"></i> Quran
+            </a>
+
+            <a class="btn btn-lg btn-outline-success px-5 py-3 shadow rounded-pill" href="/Hadith/Index">
+                <i class="bi bi-journal-text"></i> Hadith
+            </a>
+        </div>
+    </div>
 </div>

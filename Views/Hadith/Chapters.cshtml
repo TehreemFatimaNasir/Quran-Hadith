@@ -1,44 +1,118 @@
-﻿@model IEnumerable<WebApplication5.Models.Chapter>
-
+﻿@model System.Text.Json.JsonElement?
 @{
     ViewData["Title"] = "Chapters";
+    var bookSlug = ViewBag.BookSlug as string;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>Hadith Chapters</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Chapter Number</th>
-            <th>Chapter English</th>
-            <th>Chapter Arabic</th>
-            <th>Action</th> <!-- Added heading for actions -->
-        </tr>
-    </thead>
-    <tbody>
-        @if (Model != null && Model.Any())
+<div class="container mt-4">
+    <h2 class="mb-3">Chapters</h2>
+    <div class="list-group">
+        @foreach (var chapter in Model.Value.EnumerateArray())
         {
-            foreach (var chapter in Model)
-            {
-                <tr>
-                    <td>@chapter.Id</td>
-                    <td>@chapter.ChapterNumber</td>
-                    <td>@chapter.ChapterEnglish</td>
-                    <td>@chapter.ChapterArabic</td>
-                    <td>
-                        <a asp-controller="Hadith" asp-action="HadithDetails" asp-route-chapterId="@chapter.Id" class="btn btn-primary">
-                            View Hadiths
-                        </a>
-                    </td>
-                </tr>
-            }
+            <a class="list-group-item list-group-item-action" href="@Url.Action("Hadiths", new { bookSlug = bookSlug, chapter = chapter.GetProperty("chapterNumber").GetString() })">
+                <strong class="arabic-text">@chapter.GetProperty("chapterArabic")</strong> - <span class="urdu-text">@chapter.GetProperty("chapterUrdu")</span>
+            </a>
         }
-        else
-        {
-            <tr><td colspan="5" class="text-center">No chapters found.</td></tr>
-        }
-    </tbody>
-</table>
+    </div>
+</div>
 
-<a href="@Url.Action("Books", "Hadith")" class="btn btn-secondary">Back to Books</a>
+
+<style>
+    
+    .-heading {
+        color: #2f2f2f; 
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #005f8e; 
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+   
+    .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+    }
+
+    .list-group {
+        background-color: #005f8e; 
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .chapter-item {
+        background-color: #005f8e;
+        color: #2f2f2f;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+        padding: 18px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+
+        .chapter-item:hover {
+            background-color: #005f8e; 
+            color: #005f8e;
+            transform: translateX(5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+    
+    .arabic-text {
+        font-family: 'Scheherazade', serif;
+        font-size: 20px;
+        color: #0d47a1; 
+        direction: rtl;
+        display: block;
+    }
+
+    .chapter-item:hover .arabic-text,
+    .chapter-item:hover .urdu-text {
+        color: #005f8e;
+    }
+
+   
+    .urdu-text {
+        font-family: 'Noto Nastaliq Urdu', serif;
+        font-size: 16px;
+        color: #333;
+        direction: rtl;
+        display: block;
+        margin-top: 5px;
+    }
+
+    
+  (max-width: 768px) {
+        .container
+
+    {
+        padding: 20px;
+    }
+
+    .-heading {
+        font-size: 24px;
+    }
+
+    .chapter-item {
+        padding: 15px;
+    }
+
+    .arabic-text {
+        font-size: 18px;
+    }
+
+    .urdu-text {
+        font-size: 14px;
+    }
+
+    }
+</style>
